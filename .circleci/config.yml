@@ -16,6 +16,7 @@ jobs:
       - run: dotnet --list-sdks
       - run: reg query "HKLM\SOFTWARE\Microsoft\Net Framework Setup\NDP" /s  
       # - run: choco install uninstalltool
+      - run: "dotnet-core-uninstall-1.6.0.msi"
       - run: choco uninstall dotnetcore-sdk
       - run: choco uninstall dotnet-5.0.411-sdk
       - run: choco uninstall dotnet-5.0.401-sdk
